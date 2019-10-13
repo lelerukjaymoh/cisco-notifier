@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CISCO Notifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h2>Cisco Notifier</h2>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Save">
+      </form>
+
+    <table>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+            {% for each in data %}
+            <tr>
+                <td>{{each.email}}</td>
+                <td>{{each.password}}</td>
+                <td>0{{each.phone}}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+</body>
+</html>

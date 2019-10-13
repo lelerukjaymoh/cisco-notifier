@@ -1,0 +1,9 @@
+__pycache__ 
+login.cpython-36.__pycache__
+.pytest_cache
+.vscode
+chromedriver_linux64/
+ciscovenv/
+CourseModules_scan_cs_sep2019_files/
+db.sqlite3
+CourseModules_scan_cs_sep2019.html
